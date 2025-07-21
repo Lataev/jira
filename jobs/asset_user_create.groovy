@@ -1,3 +1,7 @@
+'''
+Создание ассетов для каждого пользователя с атрибутами: Имя, пользователь, статус.
+'''
+
 import com.atlassian.jira.component.ComponentAccessor
 
 def userManager = ComponentAccessor.getUserManager()
