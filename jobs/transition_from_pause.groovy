@@ -7,5 +7,5 @@ def query = 'project = project AND status = "На паузе" AND "На пауз
 def issues = Issues.search(query)
 
 issues.each { issue ->
-      issue.transition('Из паузы')
+      issue.transition(123) // id перехода 'Из паузы'
 }
