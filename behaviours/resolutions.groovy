@@ -4,7 +4,7 @@
 
 if (action) {
 
-    def done_names = ['Решить запрос', 'Решить']
+    def done_names = ['Решить запрос', 'Решить'] // Через имя наглядно, но надёжнее через id - done_ids.contains(action.id) 
     if (done_names.contains(action.name)) 
         {
             getFieldById('resolution').setFieldOptions(['Готово'])
