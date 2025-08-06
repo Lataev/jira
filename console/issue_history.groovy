@@ -18,7 +18,7 @@ changeHistoryManager.getChangeHistories(issue).reverseEach { history -> // в о
             log.warn(item.oldvalue)
             log.warn(item.newvalue)
 
-            if (!field & !item.newvalue)
+            if (!field && !item.newvalue)
             {
                 Users.runAs('admin') 
                 {

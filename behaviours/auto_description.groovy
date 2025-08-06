@@ -3,7 +3,7 @@
 Скрипт прописывается в server side script поля customfield_16000.
 '''
 
-if (actionName == 'Создать проблему' | actionName == 'Create') {
+if (actionName == 'Создать проблему' || actionName == 'Create') {
 
     def select_field = getFieldById('customfield_16000') // Тип неполадки, поле выбора.
     def description = getFieldById('description') // Описание.
