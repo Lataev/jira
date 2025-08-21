@@ -2,6 +2,7 @@
 Простой поиск запросов в Jira
 '''
 
+
 from jira import JIRA, client
 from secret import auth_data
 
