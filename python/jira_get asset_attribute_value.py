@@ -19,3 +19,4 @@ for attribute in user_asset['attributes']:
     if attribute['objectTypeAttributeId'] == 3333: # id атрибута
         print(attribute['objectAttributeValues'][0]['value'])
 
+insight.close()

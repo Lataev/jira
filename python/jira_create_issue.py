@@ -38,3 +38,5 @@ new_issue.update(fields={
     }
 )
 new_issue.update(customfield_10301=[{"set": [{"key": "DICT-22222"}]}])
+
+jira.close()
