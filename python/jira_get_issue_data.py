@@ -31,3 +31,5 @@ if __name__ == '__main__':
     print(issue_data.text_field)
 
     print('\n'.join(f'{key}\t\t{value}' for key, value in issue_data.__dict__.items())) # Посмотреть все ключи-значения класса
+
+jira.close()
