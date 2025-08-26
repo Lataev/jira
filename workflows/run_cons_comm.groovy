@@ -14,3 +14,8 @@ def process = processBuilder.start()
 
 def output = process.inputStream.text
 log.warn(output)
+
+
+// Получение значений аргументов в Python
+// import sys
+// issue_key = sys.argv[1]
