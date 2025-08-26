@@ -9,7 +9,6 @@ import groovy.sql.Sql
 
 GenericDelegator delegator = CoreFactory.getGenericDelegator()
 String helperName = delegator.getGroupHelperName("default")
-log.warn(helperName)
 Connection conn = ConnectionFactory.getConnection(helperName)
 
 
