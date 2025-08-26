@@ -19,6 +19,7 @@ def get_issue_data(issue: Issue):
         list_field = f"{issue.get_field('customfield_14001')}" # Поле выбора
         text_field = issue.get_field('customfield_14002').strip() # Текстовое поле
         issue_reporter = issue.fields.reporter # Автор запроса
+        issue_description = issue.fields.description # Описание
         date_field = issue.get_field('customfield_14003') # Поле даты
         date = datetime.strptime(date_field, "%d.%m.%Y")
     return Issue_fields
