@@ -31,7 +31,7 @@ def search_jira_issues(jql_query) -> client.ResultList:
     return issues
 
 def close_issue(issue: Issue):
-
+    '''Перевод запроса в статус Завершено'''
     jira = jira_auth()
     jira.add_comment('Запрос закрыт автоматически')
     logging.info(f'Запрос закрыт автоматически: {issue.key}')

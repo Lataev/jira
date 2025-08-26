@@ -14,6 +14,7 @@ jira = JIRA(
 )
 
 def get_issue_data(issue: Issue):
+    '''Получение данных из полей запроса'''
     class Issue_fields:
         asset_field = issue.get_field('customfield_14000') # Поле актива, возвращает список 
         list_field = f"{issue.get_field('customfield_14001')}" # Поле выбора

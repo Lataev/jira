@@ -8,7 +8,7 @@ from secret import auth_data
 
 
 def search_jira_issues(jql_query) -> client.ResultList:
-
+    '''Поиск запросов'''
     # Аутентификация по логину-паролю, либо по токену
     jira = JIRA(
         basic_auth=(
