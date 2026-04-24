@@ -2,7 +2,7 @@
 Ограничение минимальной длины комментария на некоторых переходах.
 '''
 
-if ([111, 222].contains(action.id)) { // Если переход с id 111 или 222.
+if (action && [111, 222].contains(action.id)) { // Если переход с id 111 или 222.
 
     def comment = getFieldById('comment') // Поле комментария.
     def comment_value = comment.value.toString() // Значение поля комментария.
