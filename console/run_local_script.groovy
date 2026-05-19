@@ -8,7 +8,7 @@ def vars = [
     "issue": issue
 ]
 
-def scriptFile = new File("/var/atlassian/application-data/jira/scripts/Scripts/script_name.groovy")
+def scriptFile = new File("/var/atlassian/application-data/jira/scripts/my_scripts/script_name.groovy")
 
 if (scriptFile.exists()) {
     def shell = new GroovyShell(new Binding(vars))
