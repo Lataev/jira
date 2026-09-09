@@ -6,7 +6,7 @@ import com.atlassian.jira.component.ComponentAccessor
 
 def userManager = ComponentAccessor.getUserManager()
 def allUsers = userManager.getAllApplicationUsers() // функция считается устаревшей, но работает
-def allUsers2 = Groups.getByName('jira-software-users').members // можно использовать участников самой массовой группы
+def allUsers2 = Groups.getByName('jira-software-users').members.findAll() { it.directoryId == 10000 } // можно использовать участников самой массовой группы + если нужно, фильтр по id директории
 
 def group = Groups.getByName("groupName")
 
