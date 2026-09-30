@@ -7,12 +7,10 @@ string[] keys = selectIssues("project = proj and resolution is EMPTY"); // jql: 
 string[] matchingIssues;
 
 for(string k in keys) {
-    string creator = k.creator;
+    string creator = k.creator; // возвращает key вида JIRAUSER1111
     string reporter = k.reporter;
     
-    boolean arraysMatch = true;
-    
-    // Если размер или содержимое массивов не совпадают, добавление в список
+    // Если не совпадают, добавление в список
     if (creator != reporter) {
         matchingIssues += k;
     }
